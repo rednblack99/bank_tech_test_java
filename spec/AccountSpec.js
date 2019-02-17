@@ -5,12 +5,9 @@ describe("Account", function() {
     account = new Account();
   });
 
-  it("can show a custom message", function() {
-    expect(account.show_balance()).toEqual("Hello, world");
+  it("can deposit £1000 and update balance", function() {
+    account.deposit(1000)
+    expect(account.balance).toEqual(1000);
   })
 
-  // it("should be able to play a Song", function() {
-  //   player.play(song);
-  //   expect(player.currentlyPlayingSong).toEqual(song);
-  // });
 });
