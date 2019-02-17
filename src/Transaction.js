@@ -15,7 +15,7 @@ class Transaction {
   }
 
   format(amount) {
-    return(amount != nil ? amount.toString + ".00 " : nil)
+    return(amount != 0 ? amount.toString + ".00 " : nil)
   }
 
 }
