@@ -18,4 +18,8 @@ class Transaction {
     return(amount != 0 ? amount.toString + ".00 " : nil)
   }
 
+  date_format() {
+    return `${this.date.getDate()}/${this.date.getMonth()+1}/${this.date.getFullYear()}`
+  }
+
 }

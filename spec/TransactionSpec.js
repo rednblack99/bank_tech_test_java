@@ -21,4 +21,9 @@ describe("Transaction", function() {
     expect(transaction.balance).toEqual(0);
   })
 
+  it("Can format the date", function() {
+    transaction = new Transaction(new Date(2001, 0, 1), 1000, 500, 0);
+    expect(transaction.date_format()).toEqual("1/1/2001")
+  })
+
 });
