@@ -8,8 +8,8 @@ class Account {
     this.balance += amount
   }
 
-  show_balance() {
-    return "Hello, world"
+  withdraw(amount) {
+    this.balance -= amount
   }
 
 }

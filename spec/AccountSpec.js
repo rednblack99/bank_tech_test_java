@@ -10,4 +10,9 @@ describe("Account", function() {
     expect(account.balance).toEqual(1000);
   })
 
+  it("can withdraw £500 and update balance", function() {
+    account.withdraw(500)
+    expect(account.balance).toEqual(-500);
+  })
+
 });
