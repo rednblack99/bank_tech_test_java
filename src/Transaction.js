@@ -7,15 +7,15 @@ class Transaction {
   }
 
   is_credit() {
-    format(this.credit)
+    return this.format(this.credit)
   }
 
   is_debit() {
-    format(this.debit)
+    return this.format(this.debit)
   }
 
   format(amount) {
-    return(amount != 0 ? amount.toString + ".00 " : nil)
+    return(amount != 0 ? amount.toString() + ".00 " : "")
   }
 
   date_format() {
