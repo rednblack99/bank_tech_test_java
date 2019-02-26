@@ -1,4 +1,4 @@
-# Bank Tech Test in Java
+# Bank Tech Test in JavaScript
 
 ```
          _._._                       _._._
