@@ -4,14 +4,14 @@ class Account {
     this.balance = 0
   }
 
-  deposit(amount, transaction = Transaction) {
+  deposit(amount, transaction = Transaction, date = new Date()) {
     this.balance += amount
-    this.transactions.push(new transaction(new Date(), amount, 0, this.balance))
+    this.transactions.push(new transaction(date, amount, 0, this.balance))
   }
 
-  withdraw(amount, transaction = Transaction) {
+  withdraw(amount, transaction = Transaction, date = new Date()) {
     this.balance -= amount
-    this.transactions.push(new transaction(new Date(), 0, amount, this.balance))
+    this.transactions.push(new transaction(date, 0, amount, this.balance))
   }
 
   show_balance() {
